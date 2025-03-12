@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dineout Bahrain</title>
+    <link rel="icon" href="./assets/spoon-and-fork.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section start-->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 max-w-7xl">
+            <div class="flex items-center">
+                <img src="./assets/Frame 2147227394.png" alt="Dineout Logo" class="h-12 w-auto">
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Discover Restaurants</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Offers</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Reservations</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Contact Us</a>
+            </nav>
+            <a href="#" class="hidden md:inline-block bg-[#a3c232] text-white px-4 py-2 rounded-md hover:bg-lime-800 transition duration-300">
+                Find Restaurants
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 absolute w-full left-0">
+            <a href="#" class="block text-gray-700 py-2 hover:text-green-600">Home</a>
+            <a href="#" class="block text-gray-700 py-2 hover:text-green-600">Discover Restaurants</a>
+            <a href="#" class="block text-gray-700 py-2 hover:text-green-600">Offers</a>
+            <a href="#" class="block text-gray-700 py-2 hover:text-green-600">Reservations</a>
+            <a href="#" class="block text-gray-700 py-2 hover:text-green-600">Contact Us</a>
+        </div>
+    </header>
+     <!-- header section end  -->
+
+    <!-- after header image Section -->
+    <main class="relative">
+        <img src="./assets/Rectangle 1.png" alt="Restaurant background image"
+            class="w-full h-screen object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-6">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 leading-tight">
+                Discover Bahrain’s Best Restaurants In One Click!
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl text-white mb-8 max-w-2xl">
+                From Fine Dining To Local Favorites, Explore Top-Rated Restaurants, Exclusive Deals, And Easy Reservations.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-[#a3c232] text-white px-6 py-3 rounded-md text-lg hover:bg-lime-800 transition duration-300">
+                    Find Restaurants
+                </a>
+                <a href="#" class="bg-transparent text-white border border-[#a3c232] px-6 py-3 rounded-md text-lg hover:bg-[#a3c232] hover:text-white transition duration-300">
+                    Explore Deals
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- after header image section is closed  -->
+
+      <!-- Reservations Card Section Start -->
+<section class="bg-gray-100 flex flex-col items-center justify-center min-h-screen px-4">
+    <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold">
+            Exclusive Deals Just For You
+        </h1>
+        <p class="text-gray-500">
+            Enjoy Discounts, Happy Hours, And Special Dining Packages Available Only On DineOut Bahrain.
+        </p>
+    </div>
+
+    <!-- Card Container -->
+    <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center space-y-6 md:space-y-0 md:gap-6 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-3/4 md:w-1/2 max-w-md">
+            <img src="./assets/Rectangle 34625094.png" alt="A luxurious dining experience at Al Fanar" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">
+                    Get 20% Off At Al Fanar!
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Enjoy A Luxurious Dining Experience At Al Fanar This Weekend. Reserve Your Table Now And Save 20% On Your Bill.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Hurry, Offer Expires In 2 Days!
+                </p>
+                <button class="bg-[#a3c232] text-white px-4 py-2 rounded hover:bg-lime-800 transition duration-300">
+                    Reserve Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-3/4 md:w-1/2 max-w-md">
+            <img src="./assets/Rectangle 34625095.png" alt="A lavish buffet at Al Haramain" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">
+                    Buffet Dinner For 50 BHD At Al Haramain
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Indulge In A Lavish Buffet Featuring Over 50 Dishes From Around The World. Available Only This Friday Night!
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Limited Slots Available. Book Now!
+                </p>
+                <button class="bg-[#a3c232] text-white px-4 py-2 rounded hover:bg-lime-800 transition duration-300">
+                    Book Your Seat
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- View All Deals Button -->
+    <div class="flex justify-center mt-8">
+        <button class="bg-white text-black border border-black px-4 py-2 rounded hover:bg-gray-200 transition duration-300">
+            View All Deals
+        </button>
+    </div>
+</section>
+<!-- Reservations Card Section End -->
+
+<!-- Café Cards Section Start -->
+<section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">
+            Top Restaurants At Your Fingertips
+        </h1>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-6">
+            <button class="bg-[#a3c232] text-white px-4 py-2 rounded-full transition duration-300">
+                All
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Cozy Cafés
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Fine Dining
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Casual
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Sheesha Place
+            </button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/-cF93hlUlgJuE16669IgKru4DXn01szK18mZvbCVpnE.jpg" alt="Cafe Lilou" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/pcR80wNe8Lvuov-Rv7SJ2-HRVpgPMfOF8Y2JRLf5S9o.jpg" alt="Cafe Lilou Interior" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/LOmH0giFHvcx7QWNL8pxqGtrLSjRpI1N9AteijNN_Ms.jpg" alt="Barista making coffee" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Café Cards Section End -->
+
+<!-- Smart Dine Section Start -->
+<section class="bg-gray-50 flex items-center justify-center min-h-screen py-10">
+    <div class="text-center px-4">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl font-bold text-black mb-4">
+            Dine Smart, Dine Easy!
+        </h1>
+        <p class="text-gray-600 mb-12 max-w-lg mx-auto">
+            Discover Top Restaurants, Hidden Gems, And Delicious Options Nearby. Your Next Great Meal is Just A Click Away!
+        </p>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+            <!-- Search Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Search icon" class="w-full h-full object-contain" src="./assets/Group 1171276119.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Search</h2>
+                <p class="text-gray-600">
+                    Find The Perfect Spot By Cuisine, Location, Or Ratings.
+                </p>
+            </div>
+
+            <!-- Reserve Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Reserve icon" class="w-full h-full object-contain" src="./assets/Group 1171276120.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Reserve</h2>
+                <p class="text-gray-600">
+                    Book A Table Or Order Food For Delivery In Seconds.
+                </p>
+            </div>
+
+            <!-- Enjoy Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Enjoy icon" class="w-full h-full object-contain" src="./assets/Group 1171276121.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Enjoy</h2>
+                <p class="text-gray-600">
+                    Sit Back And Savor Your Dining Experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Smart Dine Section End -->
+
+ <!-- Reservations section starts here  -->
+    <body class="bg-[#f5f5e6] flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-8xl p-8 bg-[#f5f5e6] rounded-lg shadow-md">
+            <h1 class="text-4xl font-bold text-black mb-4">Reserve Your Table.</h1>
+            <p class="text-lg text-gray-700 mb-8">Discover Unforgettable Dining Experiences Across Bahrain. Book Your Table Today At Your Favourite Spot.</p>
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="location" class="block text-sm font-medium text-gray-700">Location*</label>
+                        <input type="text" id="location" name="location" placeholder="Your Location" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="restaurant" class="block text-sm font-medium text-gray-700">Restaurant*</label>
+                        <div class="relative mt-1">
+                            <input type="text" id="restaurant" name="restaurant" placeholder="Search For Restaurant" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label for="guests" class="block text-sm font-medium text-gray-700">No. Of Guests*</label>
+                        <input type="number" id="guests" name="guests" placeholder="Guests" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="date" class="block text-sm font-medium text-gray-700">Date*</label>
+                        <div class="relative mt-1">
+                            <input type="date" id="date" name="date" placeholder="Date" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-calendar-alt text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="time" class="block text-sm font-medium text-gray-700">Time*</label>
+                        <div class="relative mt-1">
+                            <input type="time" id="time" name="time" placeholder="Time" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-clock text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button type="submit" class="w-full md:w-auto bg-[#a3c644] text-white font-bold py-2 px-4 rounded-md shadow-md hover:bg-[#8fbf3d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Reserve Now</button>
+                </div>
+            </form>
+            <p class="mt-8 text-sm text-gray-700">For Same-Day Reservations Or Special Requests, Feel Free To Give Us A Call!</p>
+            <p class="text-sm text-gray-700 font-bold">(555) 123-4567</p>
+        </div>
+                 <!-- Reservations section closed here  -->
+<!-- Café Cards Section Start -->
+<section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">
+            Top Restaurants At Your Fingertips
+        </h1>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-6">
+            <button class="bg-[#a3c232] text-white px-4 py-2 rounded-full transition duration-300">
+                All
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Cozy Cafés
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Fine Dining
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Casual
+            </button>
+            <button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+                Sheesha Place
+            </button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/-cF93hlUlgJuE16669IgKru4DXn01szK18mZvbCVpnE.jpg" alt="Cafe Lilou" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/pcR80wNe8Lvuov-Rv7SJ2-HRVpgPMfOF8Y2JRLf5S9o.jpg" alt="Cafe Lilou Interior" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+                <img src="https://storage.googleapis.com/a1aa/image/LOmH0giFHvcx7QWNL8pxqGtrLSjRpI1N9AteijNN_Ms.jpg" alt="Barista making coffee" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Cafe Lilou</h2>
+                    <p class="text-gray-600 mb-2">Famous For Its Desserts And Chic Ambiance.</p>
+                    <p class="text-gray-600 mb-2">1.5 Km Away · French Cuisine</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-500 space-x-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 ml-2">(12 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Café Cards Section End -->
+
+<!-- Smart Dine Section Start -->
+<section class="bg-gray-50 flex items-center justify-center min-h-screen py-10">
+    <div class="text-center px-4">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl font-bold text-black mb-4">
+            Dine Smart, Dine Easy!
+        </h1>
+        <p class="text-gray-600 mb-12 max-w-lg mx-auto">
+            Discover Top Restaurants, Hidden Gems, And Delicious Options Nearby. Your Next Great Meal is Just A Click Away!
+        </p>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+            <!-- Search Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Search icon" class="w-full h-full object-contain" src="./assets/Group 1171276119.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Search</h2>
+                <p class="text-gray-600">
+                    Find The Perfect Spot By Cuisine, Location, Or Ratings.
+                </p>
+            </div>
+
+            <!-- Reserve Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Reserve icon" class="w-full h-full object-contain" src="./assets/Group 1171276120.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Reserve</h2>
+                <p class="text-gray-600">
+                    Book A Table Or Order Food For Delivery In Seconds.
+                </p>
+            </div>
+
+            <!-- Enjoy Card -->
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-24 h-24 flex items-center justify-center">
+                    <img alt="Enjoy icon" class="w-full h-full object-contain" src="./assets/Group 1171276121.png" />
+                </div>
+                <h2 class="text-xl font-semibold text-black">Enjoy</h2>
+                <p class="text-gray-600">
+                    Sit Back And Savor Your Dining Experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Smart Dine Section End -->
+
+<!-- Reviews Card Section Starts -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
+            What Our Clients Say
+        </h1>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-500 space-x-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">5 (12 Reviews)</span>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    DineOut Bahrain has completely changed the way I plan my meals out. I love how intuitive the app is—finding restaurants by cuisine or location takes seconds! The deals section has helped me save money while trying new places.
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/4zrqEsM0V60hXI6yeyP2sxQv7Ob6oBp8yC6ISPJd0Mk.jpg"
+                        alt="Profile picture of Sarah Ahmed" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">Sarah Ahmed</p>
+                        <p class="text-gray-600 text-sm">Food Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-500 space-x-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">5 (12 Reviews)</span>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    I've always struggled with last-minute dinner plans, but DineOut makes it so easy to find and book a table in just a few taps. The app's sleek design and accurate restaurant ratings ensure I always choose the perfect spot.
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/E8e2BS3YTMsoabuvXyXncFPbKobPgobrtYuqEZHp6wY.jpg"
+                        alt="Profile picture of Ali Raza" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">Ali Raza</p>
+                        <p class="text-gray-600 text-sm">Frequent Diner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-500 space-x-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">5 (12 Reviews)</span>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Thanks to DineOut Bahrain, I've discovered amazing restaurants I would've never known about! The app is incredibly user-friendly, and I love the personalized recommendations.
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/ASA-Rj5C7bvpxHyu2Fwkhy3G3sGBwDDCtnOHu4K8Nps.jpg"
+                        alt="Profile picture of Marium Kamran" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">Marium Kamran</p>
+                        <p class="text-gray-600 text-sm">Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-center mt-8">
+            <button class="bg-white border border-gray-300 rounded-full p-3 mx-2 hover:bg-gray-200 transition">
+                <i class="fas fa-chevron-left text-gray-600"></i>
+            </button>
+            <button class="bg-white border border-gray-300 rounded-full p-3 mx-2 hover:bg-gray-200 transition">
+                <i class="fas fa-chevron-right text-gray-600"></i>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Reviews Card Section Ends -->
+ <!-- Dining Experience Section Starts -->
+<section class="bg-[#f7f7f5] flex items-center justify-center min-h-screen px-4 py-10">
+    <div class="bg-[#f7f7f5] p-8 rounded-lg shadow-lg text-center w-full max-w-3xl">
+        <!-- Logo -->
+        <div class="flex justify-center mb-6">
+            <img src="./assets/Frame 2147226470.png" alt="Logo" class="rounded-full w-20 h-20">
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-2xl md:text-3xl font-bold text-black mb-4">
+            Discover Bahrain's Finest Dining Experiences!
+        </h1>
+
+        <!-- Features -->
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 mb-6">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-search text-black"></i>
+                <span class="text-black">Find Top Spots</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-dollar-sign text-black"></i>
+                <span class="text-black">Save On Dining</span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center space-x-4 mb-6">
+            <button class="bg-[#a3c232] text-white px-5 py-2 rounded-lg hover:bg-[#8aa927] transition">
+                Find Restaurants
+            </button>
+            <button class="bg-white text-black border border-gray-300 px-5 py-2 rounded-lg hover:bg-gray-200 transition">
+                Explore Deals
+            </button>
+        </div>
+
+        <!-- Images Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center">
+            <img src="https://storage.googleapis.com/a1aa/image/FyvESpJ-fPoshMQMXmpZdHIvczBvz14RHBN7viNjceg.jpg"
+                alt="Restaurant interior" class="rounded-lg w-full sm:w-32 md:w-40 lg:w-48 h-32 object-cover">
+            <img src="https://storage.googleapis.com/a1aa/image/NYh0K1RDdW-eZz8m62FoPX6wmNtwA8oxHfrtovNX5ng.jpg"
+                alt="Elegant dining room" class="rounded-lg w-full sm:w-32 md:w-40 lg:w-48 h-32 object-cover">
+            <img src="https://storage.googleapis.com/a1aa/image/lZpcfOfESSllfcFIcJBTBASuydtjQsQHMxZ-ZfQn5Uw.jpg"
+                alt="Street food vendor" class="rounded-lg w-full sm:w-32 md:w-40 lg:w-48 h-32 object-cover">
+            <img src="https://storage.googleapis.com/a1aa/image/s5VROHQpIU1iarGoJOgY8PePbg8Z5n9se2bRQK496ek.jpg"
+                alt="Cozy restaurant" class="rounded-lg w-full sm:w-32 md:w-40 lg:w-48 h-32 object-cover">
+        </div>
+    </div>
+</section>
+<!-- Dining Experience Section Ends -->
+ 
+<!-- Footer Section Starts -->
+<footer class="bg-white py-10">
+    <div class="container mx-auto px-6 lg:px-16">
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <!-- Logo & Description -->
+            <div class="col-span-2 md:col-span-1">
+                <img src="./assets/Frame 2147227394.png" alt="Dineout logo" class="mb-4 w-44 h-auto">
+                <p class="text-gray-700 text-sm">
+                    From Fine Dining To Local Favorites, Explore Top-Rated Restaurants, Exclusive Deals, And Easy Reservations.
+                </p>
+                <!-- Social Icons -->
+                <div class="flex mt-4 space-x-4">
+                    <a href="#" class="text-[#a3c232] hover:text-[#8aa927] transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-[#a3c232] hover:text-[#8aa927] transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-[#a3c232] hover:text-[#8aa927] transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-[#a3c232] hover:text-[#8aa927] transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div>
+                <h3 class="text-gray-900 font-semibold mb-2">What We Do</h3>
+                <ul class="text-gray-700 text-sm space-y-1">
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Features</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Blogs</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Security</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">For Business</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-900 font-semibold mb-2">Who Are We</h3>
+                <ul class="text-gray-700 text-sm space-y-1">
+                    <li><a href="#" class="hover:text-[#a3c232] transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Brand Center</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-900 font-semibold mb-2">Services</h3>
+                <ul class="text-gray-700 text-sm space-y-1">
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Planning</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Consultation</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Strategy</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">For Business</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-900 font-semibold mb-2">Need Help?</h3>
+                <ul class="text-gray-700 text-sm space-y-1">
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Help Center</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">FAQ</a></li>
+                    <li><a href="#" class="hover:text-[#a3c232] transition">Security Check</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-10 border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-700 text-sm">
+                Copyright <span class="text-[#a3c232]">valorcapital</span> 2025
+            </p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-700 text-sm hover:text-[#a3c232] transition">Privacy Policy</a>
+                <a href="#" class="text-gray-700 text-sm hover:text-[#a3c232] transition">Terms Of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section Ends -->    
+</body>
+</html>
